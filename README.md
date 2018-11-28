@@ -10,70 +10,63 @@ Um programa de linha de comando para automatizar o acesso ao sisav uem.
 [![License](https://img.shields.io/npm/l/sisav.svg)](https://github.com/thefrontendwizard/sisav-cli/blob/master/package.json)
 
 <!-- toc -->
-
-- [Uso](#uso)
-- [Comandos](#comandos)
-  <!-- tocstop -->
+* [sisav-cli](#sisav-cli)
+* [Uso](#uso)
+* [Comandos](#comandos)
+<!-- tocstop -->
 
 # Uso
 
 <!-- usage -->
-
 ```sh-session
 $ npm install -g sisav-cli
 $ sisav COMMAND
 running command...
 $ sisav (-v|--version|version)
-sisav/0.1.0 darwin-x64 node-v10.13.0
+sisav-cli/0.1.0 darwin-x64 node-v10.13.0
 $ sisav --help [COMMAND]
-USO
+USAGE
   $ sisav COMMAND
 ...
 ```
-
 <!-- usagestop -->
 
 # Comandos
 
 <!-- commands -->
-
-- [sisav-cli](#sisav-cli)
-- [Uso](#uso)
-- [Comandos](#comandos)
-  - [`sisav help [COMMAND]`](#sisav-help-command)
-  - [`sisav notas`](#sisav-notas)
+* [`sisav help [COMMAND]`](#sisav-help-command)
+* [`sisav notas [FILE]`](#sisav-notas-file)
 
 ## `sisav help [COMMAND]`
 
-mostra ajuda para um comando
+display help for sisav
 
 ```
 USAGE
   $ sisav help [COMMAND]
 
 ARGUMENTS
-  COMMAND  comando para o qual você quer ajuda
+  COMMAND  command to show help for
 
 OPTIONS
-  --all  para ver todos os comandos possíveis
+  --all  see all commands in CLI
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.4/src/commands/help.ts)_
 
-## `sisav notas`
+## `sisav notas [FILE]`
 
-comando para mostrar as notas de um ano no console
+mostra as notas de um ano
 
 ```
 USAGE
-  $ sisav notas
+  $ sisav notas [FILE]
 
 OPTIONS
-  -h, --help       show CLI help
-  -r, --ra=ra1234  ra para o qual você quer ver as notas
-  -a, --ano=2018   ano para que você quer ver as notas
+  -a, --ano=ano  ano
+  -h, --help     show CLI help
+  -r, --ra=ra    ra
 ```
 
-_See code: [src/commands/notas.ts](https://github.com/thefrontendwizard/sisav-cli/blob/v0.0.0/src/commands/notas.ts)_
-
+_See code: [src/commands/notas.ts](https://github.com/thefrontendwizard/sisav-cli/blob/v0.1.0/src/commands/notas.ts)_
 <!-- commandsstop -->

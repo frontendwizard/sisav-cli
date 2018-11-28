@@ -1,7 +1,7 @@
 {
   "name": "sisav-cli",
   "description": "um programa de linha de comando para automatizar o acesso ao sisav uem",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Juliano Rafael @thefrontendwizard",
   "bin": {
     "sisav": "./bin/run"
